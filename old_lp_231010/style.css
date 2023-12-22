@@ -1,0 +1,885 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+        'Hiragino Sans', Meiryo, sans-serif;
+    font-feature-settings: 'palt';
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: normal;
+    color: #555;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    padding: 10px;
+    background-color: #fff;
+}
+header .logo {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+}
+/* fv-area */
+.fv-area {
+    background-image: url(./images/fv-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 5%;
+    background-color: #4f5755;
+    position: relative;
+    background-blend-mode: lighten;
+}
+
+.fv-img {
+    display: block;
+    width: 100%;
+}
+.fv-sp-img {
+    display: none;
+    width: 100%;
+}
+.fv-content {
+    width: 100%;
+}
+.fv-content .flex {
+    display: flex;
+}
+.fv-content .flex > div {
+    flex: 50%;
+    text-align: center;
+}
+.fv-content .flex > div:first-child {
+    background-color: rgba(255, 255, 2555, 0.7);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+.fv-content .flex > div:nth-child(2) .fv-icon {
+    display: inline-block;
+    width: 35%;
+}
+.fv-content .desc {
+    margin-top: 60px;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 1px 2px 3px #5e5e5e;
+}
+.fv-content .desc span {
+    display: flex;
+    margin-top: 35px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 2px 3px #5e5e5e;
+}
+/* about-area */
+.about-area {
+    background-image: url(./images/about-area-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+.about-area h2 {
+    color: #2a94e0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-area p {
+    margin: 0 0 25px 0;
+    line-height: 2;
+    font-size: 16px;
+}
+.about-area a {
+    background: #252525;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px auto 0;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 30px;
+    border-bottom: 4px solid #000000;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+.about-area a:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.about-area a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-image: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 55%
+    );
+    animation: shine 3s infinite;
+}
+@keyframes shine {
+    33% {
+        left: 85%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.about-area a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translateY(-48%);
+    position: absolute;
+    top: 48%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.contents_02 p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* structure-area */
+.structure-area {
+    padding: 50px 0;
+    background-color: rgb(206, 238, 243);
+    background-image: url(./images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.structure-area .container .contents {
+    background-color: #fff;
+    padding: 40px 30px;
+}
+.structure-area .container .contents h2 {
+    text-align: center;
+    color: #2a94e0;
+    font-weight: bold;
+    font-size: 30px;
+    margin: auto;
+    line-height: 1.6;
+}
+.structure-area .container .contents h2 .logo {
+    width: 30%;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.structure-area .container .contents > p {
+    text-align: center;
+    margin: 35px 0;
+    line-height: 2;
+}
+.structure-area .container .contents .structure-img-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.structure-area .container .contents .structure-img-wrapper .structure-img {
+    display: block;
+    width: 100%;
+}
+.structure-area .container .contents .desc {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    border: 2px solid #555;
+    position: relative;
+    margin-top: -40px;
+}
+.structure-area .container .contents .desc h3 {
+    text-align: center;
+    color: #2a94e0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.structure-area .container .contents .desc .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.structure-area .container .contents .desc .flex > div:first-child {
+    flex: 50%;
+}
+.structure-area .container .contents .desc .flex > div:nth-child(2) {
+    flex: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+}
+.structure-area
+    .container
+    .contents
+    .desc
+    .flex
+    > div:first-child
+    .structure-icon {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.structure-area
+    .container
+    .contents
+    .desc
+    .flex
+    > div:nth-child(2)
+    span:nth-of-type(1) {
+    color: #2a94e0;
+}
+.structure-area
+    .container
+    .contents
+    .desc
+    .flex
+    > div:nth-child(2)
+    span:nth-of-type(2) {
+    color: #e21e1e;
+}
+/* reason-area */
+.reason-area {
+    padding: 50px 0;
+    background-color: rgb(206, 238, 243);
+    background-image: url(./images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.reason-area .container .contents {
+    background-color: #fff;
+    padding: 50px 30px;
+}
+.reason-area .container .contents h2 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.reason-area .container .contents h2 .logo {
+    width: 30%;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.reason-area .container .contents h2 span {
+    color: #2a94e0;
+    font-size: 45px;
+    font-weight: bold;
+}
+.reason-area .container .contents > p {
+    text-align: center;
+    margin: 35px 0;
+    line-height: 2;
+}
+.reason-area .container .contents > .flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.reason-area .container .contents > .flex > div {
+    flex: calc(100% / 4);
+    background-color: #8bdaff;
+    margin: 0 20px;
+    padding: 25px 0;
+    color: #fff;
+    box-shadow: 6px 6px #d8d8d8;
+}
+.reason-area .container .contents > .flex > div .reason-img {
+    display: block;
+    width: 100%;
+}
+.reason-area .container .contents > .flex > div .title {
+    text-align: center;
+    margin: 20px 0;
+    border-top: 1px solid #cfcfcf;
+    font-weight: bold;
+    padding-top: 10px;
+}
+/* achievement-area */
+.achievement-area {
+    padding: 50px 0;
+    background-color: rgb(206, 238, 243);
+    background-image: url(./images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+}
+
+.achievement-area-01 {
+    margin-bottom: 80px;
+}
+
+.achievement-area .container .contents {
+    background-color: #fff;
+    padding: 50px 30px;
+}
+.achievement-area .container .contents h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #2a94e0;
+    font-weight: bold;
+    border-bottom: 2px solid #2a94e0;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.achievement-area .container .contents p {
+    margin: 0 auto 40px auto;
+    width: 60%;
+    text-align: center;
+}
+.achievement-area .container .contents .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.achievement-area .container .contents .flex .achievement-logo {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.awards-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.achievement-area .container > p {
+    color: #707070;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.annotation-text {
+    font-size: 12px;
+    text-align: left;
+    padding: 0 20px;
+}
+/* cta-area */
+.cta-area {
+    background-color: rgb(206, 238, 243);
+    background-image: url(./images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cta-area .contents {
+    background-color: #77c0e1;
+    padding: 50px 30px;
+}
+.cta-area .contents h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.cta-area .contents h2 .logo {
+    display: inline-block;
+    width: 20%;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.cta-area .contents h2 span:nth-of-type(1) {
+    color: #ffff00;
+    font-weight: bold;
+}
+.cta-area .contents h2 span:nth-of-type(2) {
+    color: #f07427;
+    font-weight: bold;
+}
+.cta-area .contents a {
+    background: #252525;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px auto 0;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    border-radius: 30px;
+    border-bottom: 4px solid #000000;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cta-area .contents a:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.cta-area .contents a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-image: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 55%
+    );
+    animation: shine 3s infinite;
+}
+@keyframes shine {
+    33% {
+        left: 85%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.cta-area .contents a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translateY(-48%);
+    position: absolute;
+    top: 48%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+/* case-area */
+.case-area {
+    background-color: rgb(206, 238, 243);
+    background-image: url(./images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.case-area .container .contents {
+    padding: 50px 30px;
+}
+.case-area .container .contents h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin: auto;
+}
+.case-area .container .contents h2 .logo {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.case-area .container .contents p {
+    text-align: center;
+    margin: 35px 0;
+}
+.case-area .container .contents .scene {
+    background-color: #fff;
+    padding: 50px 30px;
+    text-align: center;
+}
+.case-area .container .contents .scene h3 {
+    font-size: 40px;
+    color: #2a94e0;
+    font-weight: bold;
+    border-bottom: 2px solid #2a94e0;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.case-area .container .contents .scene .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case-area .container .contents .scene .flex > div {
+    flex: 50%;
+}
+.case-area .container .contents .scene .flex > div .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.case-area .container .contents .scene .flex > div ul {
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+}
+.case-area .container .contents .scene .flex > div ul li {
+    line-height: 2;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.case-area .container .contents .scene .flex > div .scene-img {
+    display: block;
+    width: 100%;
+}
+.reverse {
+    flex-direction: row-reverse !important;
+}
+.industry {
+    background-color: #fff;
+    padding: 50px 30px;
+    text-align: center;
+}
+.industry .arrow-img {
+    display: block;
+    margin: 0 auto 50px;
+    width: 7%;
+}
+.industry h3 {
+    font-size: 40px;
+    color: #2a94e0;
+    font-weight: bold;
+    border-bottom: 2px solid #2a94e0;
+    display: inline-block;
+}
+.industry > .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+    padding: 50px 0;
+}
+.industry > .flex > div:first-child {
+    flex: 45%;
+}
+.industry > .flex > div:nth-child(2) {
+    flex: 55%;
+}
+.industry > .flex > div:first-child .title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.industry > .flex > div:first-child .industry-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.industry > .flex > div:nth-child(2) .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry > .flex > div:nth-child(2) .flex:not(:last-child) {
+    margin-bottom: 10px;
+}
+.industry > .flex > div:nth-child(2) .flex > div:first-child {
+    flex: 30%;
+    background-color: #2a94e0;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.industry > .flex > div:nth-child(2) .flex > div:nth-child(2) {
+    flex: 80%;
+    padding: 10px;
+    text-align: left;
+}
+.industry > .flex > div:nth-child(2) .flex .bg-color {
+    background-color: #db7c43 !important;
+}
+
+.form-area .head {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a94e0;
+}
+
+footer {
+    background: #f3f3f3;
+    padding:5px 0;
+}
+footer .copyright {
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: normal;
+}
+@media screen and (max-width: 960px) {
+.container {
+    width: 90%;
+}
+header .logo {
+    width: 50%;
+}
+.fv-area {
+    background-image: url(./images/fv-sp-img.png);
+}
+
+.fv-img {
+    display: none;
+}
+.fv-sp-img {
+    display: block;
+}
+.fv-content .flex {
+    display: grid;
+}
+.fv-content .flex > div {
+    margin-top: 15px;
+    order: 2;
+}
+.fv-content .flex > div:first-child {
+    font-size: 18px;
+    order: 1;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+.fv-content .flex > div:nth-child(2) .fv-icon {
+    width: 45%;
+}
+.fv-content .desc {
+    margin-top: 15px;
+    font-size: 16px;
+}
+.fv-content .desc span {
+    margin-top: 25px;
+    font-size: 12px;
+}
+.about-area p {
+    margin: 15px 0;
+    font-size: 16px;
+    text-align: left;
+}
+.structure-area {
+    padding: 25px 0;
+}
+.structure-area .container .contents {
+    padding: 25px 30px;
+}
+.structure-area .container .contents h2 {
+    font-size: 18px;
+}
+.structure-area .container .contents h2 .logo {
+    width: 70%;
+}
+.structure-area .container .contents > p {
+    margin: 25px 0;
+    text-align: left;
+}
+.structure-area .container .contents .structure-img-wrapper {
+    width: 100%;
+}
+.structure-area .container .contents .desc {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.structure-area .container .contents .desc .flex {
+    display: block;
+}
+.structure-area .container .contents .desc .flex > div:nth-child(2) {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 90%;
+    margin: 15px auto 0;
+}
+.reason-area {
+    padding: 25px 0px;
+}
+.reason-area .container .contents {
+    padding: 25px 30px;
+}
+.reason-area .container .contents h2 .logo {
+    width: 85%;
+}
+.reason-area .container .contents h2 span {
+    font-size: 42px;
+}
+.reason-area .container .contents > p {
+    text-align: left;
+    margin: 15px 0 40px 0;
+    font-size: 14px;
+}
+.reason-area .container .contents > .flex {
+    display: block;
+}
+.reason-area .container .contents > .flex > div {
+    padding: 20px 0;
+    margin: 0;
+}
+.reason-area .container .contents > .flex > div:not(:last-child) {
+    margin: 0 0 25px 0;
+}
+.achievement-area .container .contents {
+    padding: 25px 30px;
+}
+.achievement-area .container .contents h2 {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.achievement-area .container .contents p {
+    margin: 15px auto;
+    width: 100%;
+    text-align: left;
+}
+.achievement-area .container > p {
+    color: #242424;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.cta-area .contents {
+    background-color: #77c0e1;
+    padding: 25px 10px;
+}
+.cta-area .contents h2 {
+    font-size: 20px;
+}
+.cta-area .contents h2 .logo {
+    width: 80%;
+}
+.cta-area .contents a {
+    margin: 20px auto 0;
+}
+.cta-area .contents h2 span:nth-of-type(1) {
+    font-size: 24px;
+}
+.cta-area .contents h2 span:nth-of-type(2) {
+    font-size: 24px;
+}
+.case-area .container .contents {
+    padding: 25px 0px;
+}
+.case-area .container .contents h2 .logo {
+    width: 80%;
+}
+.case-area .container .contents p {
+    margin: 25px 0;
+    text-align: left;
+}
+.case-area .container .contents .scene {
+    padding: 25px 20px;
+}
+.case-area .container .contents .scene h3::after {
+    width: 66%;
+}
+.case-area .container .contents .scene .flex {
+    display: block;
+}
+.case-area .container .contents .scene .flex:not(:last-child) {
+    margin-bottom: 25px;
+}
+.case-area .container .contents .scene h3 {
+    margin-bottom: 20px;
+}
+.case-area .container .contents .scene .flex > div .title {
+    margin-bottom: 20px;
+}
+.case-area .container .contents .scene .flex > div ul {
+    width: 100%;
+}
+.case-area .container .contents .scene .flex > div ul li {
+    line-height: 1.7;
+    border-bottom: none;
+    padding: 5px 0;
+}
+.case-area .container .contents .scene .flex > div {
+    margin-bottom: 15px;
+}
+.industry {
+    background-color: #fff;
+    padding: 25px 20px;
+}
+.industry .arrow-img {
+    margin: 0 auto 25px;
+    width: 15%;
+}
+.industry h3 {
+    margin-bottom: 25px;
+}
+.industry h3::after {
+    width: 66%;
+}
+.industry > .flex {
+    display: block;
+    padding: 25px 0;
+}
+.industry > .flex > div:nth-child(2) .flex {
+    display: block;
+}
+.industry > .flex > div:nth-child(2) .flex > div:nth-child(2) {
+    padding: 10px 0;
+}
+.reason-area .container .contents h2 {
+    display: block;
+}
+.case-area .container .contents h2 {
+    font-size: 26px;
+}
+.case-area .container .contents .scene h3 {
+    font-size: 30px;
+}
+.case-area .container .contents .scene .flex > div .title {
+    font-size: 18px;
+}
+.about-area h2 {
+    font-size: 20px;
+}
+.about-area {
+    padding: 50px 30px;
+}
+.achievement-area .container .contents .flex {
+    flex-wrap: wrap;
+}
+.achievement-area .container .contents .flex div {
+    width: 48%;
+}
+.achievement-area .container .contents .flex .achievement-logo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.awards-img {
+    margin-bottom: 40px;
+}
+.structure-area .container .contents .desc h3 {
+    font-size: 20px;
+}
+.form-area 
+{
+  padding:0 10px;
+}
+.form-area .head {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a94e0;
+}
+}
